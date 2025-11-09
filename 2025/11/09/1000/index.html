@@ -21,7 +21,7 @@
 <meta property="og:description" content="题目描述：计算a+b输入：两个整数 a,b，以空格隔开输出：a+b的和 总代码：a,b&#x3D;map(int,input().split()) print(a+b)">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-11-08T19:10:35.000Z">
-<meta property="article:modified_time" content="2025-11-08T19:44:42.425Z">
+<meta property="article:modified_time" content="2025-11-09T06:40:39.639Z">
 <meta property="article:author" content="Argo Hwang">
 <meta property="article:tag" content="YGOJ题解">
 <meta name="twitter:card" content="summary">
@@ -199,13 +199,13 @@
 
   <div class="content">
     <p>题目描述：计算a+b<br>输入：两个整数 a,b，以空格隔开<br>输出：a+b的和</p>
-<h1 id="总代码："><a href="#总代码：" class="headerlink" title="总代码："></a>总代码：</h1><pre><code>a,b=map(int,input().split())
+<h2 id="总代码："><a href="#总代码：" class="headerlink" title="总代码："></a>总代码：</h2><pre><code>a,b=map(int,input().split())
 print(a+b)
 </code></pre>
 <span id="more"></span>
 
-<h1 id="解："><a href="#解：" class="headerlink" title="解："></a>解：</h1><h2 id="1-a-b-map-int-input-split"><a href="#1-a-b-map-int-input-split" class="headerlink" title="1. a,b=map(int,input().split())"></a>1. <code>a,b=map(int,input().split())</code></h2><h3 id="考点1：map-函数的用法："><a href="#考点1：map-函数的用法：" class="headerlink" title="考点1：map()函数的用法："></a>考点1：<code>map()</code>函数的用法：</h3><p>——A为一函数，B为一列表，map(A,B)的意思是：将A函数作用于B列表中的所有项。<br>举例：A为<code>int()</code>函数，B为列表<code>[&#39;1&#39;,&#39;2&#39;,&#39;3&#39;]</code>，则<code>map(A,B)</code>即<code>map(int,[&#39;1&#39;,&#39;2&#39;,&#39;3&#39;]=[1,2,3]</code><br>其作用效果在此时相当于<code>[int(&#39;1&#39;),int(&#39;2&#39;),int(&#39;3&#39;)]</code></p>
-<h3 id="考点2：split-的用法："><a href="#考点2：split-的用法：" class="headerlink" title="考点2：split()的用法："></a>考点2：<code>split()</code>的用法：</h3><p>——A为一字符串（如<code>&#39;a b c d&#39;</code>），B为字符串每个项之间的符号，则赋值语句等号后写<code>A.split(B)</code></p>
+<h1 id="解："><a href="#解：" class="headerlink" title="解："></a>解：</h1><h2 id="1-a-b-map-int-input-split"><a href="#1-a-b-map-int-input-split" class="headerlink" title="1. a,b=map(int,input().split())"></a>1. <code>a,b=map(int,input().split())</code></h2><h4 id="考点1：map-函数的用法："><a href="#考点1：map-函数的用法：" class="headerlink" title="考点1：map()函数的用法："></a>考点1：<code>map()</code>函数的用法：</h4><p>——A为一函数，B为一列表，map(A,B)的意思是：将A函数作用于B列表中的所有项。<br>举例：A为<code>int()</code>函数，B为列表<code>[&#39;1&#39;,&#39;2&#39;,&#39;3&#39;]</code>，则<code>map(A,B)</code>即<code>map(int,[&#39;1&#39;,&#39;2&#39;,&#39;3&#39;]=[1,2,3]</code><br>其作用效果在此时相当于<code>[int(&#39;1&#39;),int(&#39;2&#39;),int(&#39;3&#39;)]</code></p>
+<h4 id="考点2：split-的用法："><a href="#考点2：split-的用法：" class="headerlink" title="考点2：split()的用法："></a>考点2：<code>split()</code>的用法：</h4><p>——A为一字符串（如<code>&#39;a b c d&#39;</code>），B为字符串每个项之间的符号，则赋值语句等号后写<code>A.split(B)</code></p>
 <p>如输入<code>&#39;1 2&#39;</code>，想让a赋值为1，b赋值为2，就需要写<code>a,b=input().split()</code>，此处split后的括号内无内容，无内容和<code>&#39; &#39;</code>（空格）是同一个意思。</p>
 <p>同理，如输入<code>&#39;1,2&#39;</code>，就需要写<code>a,b=input().split(&#39;,&#39;)</code></p>
 <h3 id="考点3：a-b-赋值方法："><a href="#考点3：a-b-赋值方法：" class="headerlink" title="考点3：a,b=赋值方法："></a>考点3：<code>a,b=</code>赋值方法：</h3><p>——想让a赋值为1，b赋值为2，可以写<code>a,b=1,2</code></p>
