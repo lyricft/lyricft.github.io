@@ -1,0 +1,231 @@
+---
+import { SOCIALS } from "../data/socials";
+import Layout from "../layouts/Layout.astro";
+import Drawer from "../components/Drawer.astro";
+import Component from "../components/Component.astro";
+
+import IconCursor from "../icons/cursor.astro";
+import IconAt from "../icons/at.astro";
+import IconArrow from "../icons/arrow.astro";
+---
+
+<Layout title="鄞高2402班的起始页🛫">
+  <main
+    id="content"
+    class="flex h-full min-h-screen flex-col items-center justify-center gap-6 py-10 sm:py-10 md:py-4 lg:gap-12 drawer drawer-end"
+  >
+    <div class="grid w-full max-w-max grid-cols-2 gap-4 md:grid-cols-4">
+      <section
+        id="about"
+        aria-label="About me"
+        class="group col-span-2 flex h-40 w-full rotate-0 sm:-rotate-2 flex-col rounded-3xl border-4 border-white bg-sky-50 sm:bg-stone-100 p-4 transition-all sm:hover:rotate-0 sm:hover:bg-sky-50"
+      >
+        <div
+          class="flex lg:items-start gap-4 flex-row items-center text-center"
+        >
+          <img
+            class="aspect-square size-10 rounded-full grayscale-0 scale-110 sm:grayscale sm:scale-100 transition-all sm:group-hover:scale-110 sm:group-hover:grayscale-0"
+            src="/images/avatar.webp"
+            alt="avatar"
+          />
+          <div class="flex flex-col items-start">
+            <p
+              class="font-inter font-bold text-sky-600 sm:text-inherit sm:group-hover:text-sky-600"
+            >
+              2024级2班
+            </p>
+            <p
+              class="font-inter font-light text-sky-600 sm:text-inherit sm:group-hover:text-sky-600"
+            >
+              鄞州高级中学
+            </p>
+          </div>
+        </div>
+        <p
+          class="font-inter font-light text-sm max-w-72 text-sky-600 sm:text-inherit sm:group-hover:text-sky-600"
+        >
+          <br>
+          &nbsp;&emsp;&emsp;&emsp;一个普普通通的理化生强基班<br>
+          &nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;整活天才的集居场所<br>
+
+        </p>
+      </section>
+      <div
+        class="group overflow-hidden relative flex gap-1 h-40 w-36 flex-col rounded-3xl border-4 border-white sm:bg-stone-100 p-4 transition-all bg-green-50 rotate-0 sm:rotate-1 sm:hover:rotate-0 sm:hover:bg-green-50"
+      >
+        <img
+          class="aspect-square size-10 rounded-full grayscale-0 transition-all sm:grayscale sm:scale-100 sm:group-hover:scale-110 sm:group-hover:grayscale-0"
+          src="/images/redvike.jpg"
+          alt="redvike"
+        />
+        <p
+          class="font-roboto-condensed font-normal text-sm text-green-700 sm:text-inherit sm:group-hover:text-green-700"
+        >
+          在公众号<br>
+          重新认识我们
+        </p>
+        <p
+          class="flex gap-2 font-roboto-condensed font-thin text-sm text-rose-700 sm:text-inherit sm:group-hover:text-rose-700"
+        >
+          👉 <a
+            data-ccursor
+            href="/images/sdmy.html"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Redvike (opens in a new tab)"
+            class="inline-flex z-10 rounded-md font-roboto-condensed font-bold text-sm group-hover:text-green-700"
+            >微信公众号</a
+          >
+        </p>
+        <IconCursor />
+      </div>
+      <div
+        class="group overflow-hidden flex h-40 w-36 flex-col gap-1 rounded-3xl border-4 border-white sm:bg-stone-100 p-4 transition-all rotate-0 bg-pink-50 sm:-rotate-2 sm:hover:rotate-0 sm:hover:bg-pink-50"
+      >
+        <img
+          class="aspect-square z-10 size-10 rounded-full transition-all grayscale-0 scale-110 sm:scale-100 sm:grayscale sm:group-hover:scale-110 sm:group-hover:grayscale-0"
+          src="/images/gmail.jpg"
+          alt="redvike"
+        />
+        <p
+          class="font-roboto-condensed z-10 font-normal text-sm text-pink-600 sm:text-inherit sm:group-hover:text-pink-600"
+        >
+          在B站见证我们的活力时刻
+        </p>
+        <IconAt />
+        <a
+          data-ccursor
+          class="inline-flex items-center gap-2 font-inter px-3 py-2 text-pink-600 sm:text-inherit sm:group-hover:text-pink-600 bg-white bg-opacity-20 border border-white border-opacity-30 rounded-lg shadow-lg backdrop-blur-sm hover:bg-opacity-30 transition-all duration-200 font-bold"
+          href="https://space.bilibili.com/3546799704902078"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Redvike (opens in a new tab)"
+        >
+          &emsp;关注
+          <span
+            class="w-2 h-2 rounded-full bg-green-400 duration-1000 animate-pulse"
+          ></span>
+        </a>
+      </div>
+    </div>
+    <div class="flex flex-col items-center justify-center gap-4">
+      <h1
+        class="hover-grad-text font-inter uppercase font-semibold text-5xl lg:text-[7rem] lg:leading-[8rem]"
+      >
+        鄞高·2402
+      </h1>
+      <div
+        class="flex w-full items-center justify-center overflow-hidden gap-2"
+      >
+        <p
+          class="font-inter font-light lowercase text-2xl lg:text-[2rem] lg:leading-[2rem]"
+        >
+          发现
+          <div class="group relative inline-block">
+            <div
+              class="transition-transform duration-100 group-hover:-translate-y-16"
+            >
+              <p
+                class="font-inter font-bold lowercase text-2xl lg:text-[2rem] lg:leading-[2rem]"
+              >
+                鄞高人的生活状态。
+              </p>
+            </div>
+            <div
+              class="absolute inset-x-0 top-0 w-max translate-y-16 transition-transform duration-100 group-hover:translate-y-0"
+            >
+              <p
+                class="font-inter font-bold lowercase text-2xl lg:text-[2rem] lg:leading-[2rem] bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500"
+              >
+                添柴 是如何整活的！
+              </p>
+            </div>
+          </div>
+        </p>
+      </div>
+    </div>
+    <div class="grid w-full max-w-max grid-cols-2 gap-4 md:grid-cols-4">
+      <div
+        aria-label="Social media"
+        class="flex group flex-wrap h-40 w-36 flex-col rounded-3xl border-4 border-white p-4 transition-all rotate-0 bg-cyan-50 sm:bg-stone-100 sm:-rotate-2 sm:hover:rotate-0 sm:hover:bg-cyan-50"
+      >
+        {
+          SOCIALS.map((social) => (
+            <a
+              data-ccursor
+              class="flex flex-col basis-1/2 items-center justify-center rounded-md"
+              href="/images/sdmychun.html"
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label={`${social.name} (opens in a new tab)`}
+              data-umami-event={`${social.name} click`}
+              id={social.name}
+            >
+              <Component component={social.icon} />
+            </a>
+          ))
+        }
+      </div>
+      <a
+        href="about:blank"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="GitHub (opens in a new tab)"
+        class="group relative sm:cursor-none overflow-hidden py-4 px-0 flex h-40 w-36 flex-col gap-2 rounded-3xl border-4 border-white transition-all bg-blue-100 rotate-0 sm:-rotate-2 sm:hover:rotate-0 sm:bg-stone-100 sm:hover:bg-blue-100"
+      >
+        <span
+          class="inline-flex sm:cursor-none gap-3 items-center text-3xl font-bold font-serif italic sm:not-italic sm:group-hover:italic text-pink-500 sm:text-zinc-300 sm:group-hover:text-pink-500 rounded-lg transition-all duration-100"
+        >
+          看到
+          <IconArrow />
+        </span>
+        <span
+          class="font-serif sm:cursor-none italic sm:not-italic sm:group-hover:italic text-3xl font-bold transition-all duration-100 text-pink-500 sm:text-zinc-300 sm:group-hover:text-pink-500"
+          >我们的</span
+        >
+        <span
+          class="font-serif sm:cursor-none italic sm:not-italic sm:group-hover:italic text-3xl font-bold transition-all duration-100 text-pink-500 sm:text-zinc-300 sm:group-hover:text-pink-500"
+          >方方面面</span
+        >
+      </a>
+      <a
+        href="https://github.com/lyricft"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="GitHub (opens in a new tab)"
+        class="group overflow-hidden relative flex items-center justify-center h-40 w-36 rounded-3xl border-4 border-white p-2 transition-all bg-emerald-50 rotate-0 sm:bg-stone-100 sm:rotate-2 sm:hover:rotate-0 sm:hover:bg-emerald-50"
+      >
+        <img
+          src="https://ghchart.rshah.org/lyricft"
+          alt="GitHub contributions"
+          class="absolute scale-[9] -translate-y-[75%] opacity-100 sm:opacity-50 sm:group-hover:opacity-100 transition-opacity"
+        />
+      </a>
+      <a
+        href="https://ditu.amap.com/search?query=%E5%AE%81%E6%B3%A2%E5%B8%82&city=330212&geoobj=119.636162%7C28.736414%7C124.185421%7C31.384339&zoom=8.76"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Ningbo , China"
+        class="relative sm:cursor-none group overflow-hidden h-40 w-36 rounded-3xl border-4 border-white p-4 transition-all rotate-0 sm:rotate-2 sm:hover:rotate-0"
+      >
+        <div
+          class="absolute inset-0 z-10 bg-[url('/images/florida.webp')] bg-center bg-cover bg-no-repeat filter grayscale-0 sm:grayscale sm:group-hover:grayscale-0"
+        >
+        </div>
+        <div
+          class="absolute z-30 left-1/2 top-1/2 h-[20px] w-[20px] -translate-x-1/2 -translate-y-1/2 animate-marker rounded-full bg-blue-500"
+        >
+        </div>
+        <div
+          class="absolute left-1/2 top-1/2 z-30 h-[20px] w-[20px] -translate-x-1/2 -translate-y-1/2 rounded-full border-[3px] border-neutral-50 bg-blue-500 shadow-2xl"
+        >
+        </div>
+        <span
+          class="absolute left-4/2 top-1 z-30 font-bold font-inter text-lg text-white"
+          >Ningbo, <span class="font-roboto-condensed">PRC</span></span
+        >
+      </a>
+    </div>
+    <Drawer />
+  </main>
+</Layout>
