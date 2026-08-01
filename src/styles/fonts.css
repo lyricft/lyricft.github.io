@@ -23,40 +23,19 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 300;
-  src: url("/fonts/SarasaGothicSC-Light.ttf") format("truetype");
+  src: url("/fonts/SarasaGothicSC-Light.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/SarasaGothicSC-SemiBold.ttf") format("truetype");
+  src: url("/fonts/SarasaGothicSC-SemiBold.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/SarasaGothicSC-Bold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Sarasa Fixed Slab SC";
-  font-style: normal;
-  font-weight: 300;
-  src: url("/fonts/SarasaFixedSlabSC-Light.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Sarasa Fixed Slab SC";
-  font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/SarasaFixedSlabSC-SemiBold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Sarasa Fixed Slab SC";
-  font-style: normal;
-  font-weight: 700;
-  src: url("/fonts/SarasaFixedSlabSC-Bold.ttf") format("truetype");
+  src: url("/fonts/SarasaGothicSC-Bold.woff2") format("woff2");
 }

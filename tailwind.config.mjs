@@ -8,7 +8,6 @@ export default {
     extend: {
       fontFamily: {
         inter: ['Inter', "sans-serif"],
-        sarasa: ['Sarasa Fixed Slab SC, "sans-serif"'],
         "roboto-condensed": ['"Roboto Condensed"', "sans-serif"],
       },
     },
